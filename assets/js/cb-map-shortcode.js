@@ -346,7 +346,8 @@ function CB_Map() {
       items[input_item.id] = {
         name: input_item.name,
         short_desc: input_item.description,
-        link: input_item.url
+        link: input_item.url,
+        status: 'publish' //TODO: needed from input
       };
     });
 

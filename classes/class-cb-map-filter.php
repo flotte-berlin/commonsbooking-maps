@@ -21,7 +21,7 @@ class CB_Map_Filter {
       $location_id = $timeframe['location_id'];
       $item = $timeframe['item'];
       $is_valid_item = true;
-      $item_terms = wp_get_post_terms( $item['id'], 'cb_items_category');
+      $item_terms = wp_get_post_terms( $item['id'], 'cb_item_category');
 
       if(count($preset_category_groups) > 0) {
         $is_valid_item = self::check_item_terms_against_categories($item_terms, $preset_category_groups);

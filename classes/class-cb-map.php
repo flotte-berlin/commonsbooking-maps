@@ -188,7 +188,7 @@ class CB_Map {
   public static function get_cb_items_category_groups($preset_categories) {
     $groups = [];
     $category_terms = get_terms([
-      'taxonomy' => 'cb_items_category',
+      'taxonomy' => 'cb_item_category',
       'hide_empty' => false
     ]);
 

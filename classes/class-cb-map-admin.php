@@ -442,7 +442,7 @@ class CB_Map_Admin {
 
     //cb_items_available_categories
     $category_terms = get_terms([
-      'taxonomy' => 'cb_items_category',
+      'taxonomy' => 'cb_item_category',
       'hide_empty' => false
     ]);
     $valid_term_ids = [];
@@ -473,9 +473,9 @@ class CB_Map_Admin {
 
     //cb_items_preset_categories
     if(isset($input['cb_items_preset_categories'])) {
-      foreach($input['cb_items_preset_categories'] as $cb_items_category_id) {
-        if(in_array((int) $cb_items_category_id, $valid_term_ids)) {
-          $validated_input['cb_items_preset_categories'][] = $cb_items_category_id;
+      foreach($input['cb_items_preset_categories'] as $cb_item_category_id) {
+        if(in_array((int) $cb_item_category_id, $valid_term_ids)) {
+          $validated_input['cb_items_preset_categories'][] = $cb_item_category_id;
         }
       }
     }
@@ -529,17 +529,18 @@ class CB_Map_Admin {
       'MARKER_IMAGE_MEASUREMENTS' => cb_map\__('MARKER_IMAGE_MEASUREMENTS', 'commonsbooking-maps', 'measurements')
     ];
     echo '<script>cb_map_marker_upload.translation = ' . json_encode($translation) . ';</script>';
-/*
+
     //available categories
     $available_categories_args = [
-      'taxonomy' => 'cb_items_category',
+      'taxonomy' => 'cb_item_category',
       'echo' => false,
       'checked_ontop' => false,
       'selected_cats' => array_keys(self::get_option($cb_map_id, 'cb_items_available_categories'))
     ];
+
     $available_categories_checklist_markup = wp_terms_checklist( 0, $available_categories_args);
-    $available_categories_checklist_markup = str_replace('name="tax_input[cb_items_category][]"', 'class="cb_items_available_category_choice"', $available_categories_checklist_markup);
-    $available_categories_checklist_markup = str_replace('id="in-cb_items_category-', 'id="cb_items_available_category-', $available_categories_checklist_markup);
+    $available_categories_checklist_markup = str_replace('name="tax_input[cb_item_category][]"', 'class="cb_items_available_category_choice"', $available_categories_checklist_markup);
+    $available_categories_checklist_markup = str_replace('id="in-cb_item_category-', 'id="cb_items_available_category-', $available_categories_checklist_markup);
 
     //rearrange to nummeric array, because object property order isn't stable in js
     $cb_items_available_categories = CB_Map_Admin::get_option($cb_map_id, 'cb_items_available_categories');
@@ -553,20 +554,19 @@ class CB_Map_Admin {
 
     //preset categories
     $preset_categories_args = [
-      'taxonomy' => 'cb_items_category',
+      'taxonomy' => 'cb_item_category',
       'echo' => false,
       'checked_ontop' => false,
       'selected_cats' => self::get_option($cb_map_id, 'cb_items_preset_categories')
     ];
     $preset_categories_checklist_markup = wp_terms_checklist( 0, $preset_categories_args);
-    $preset_categories_checklist_markup = str_replace('name="tax_input[cb_items_category]', 'name="cb_map_options[cb_items_preset_categories]', $preset_categories_checklist_markup);
-    $preset_categories_checklist_markup = str_replace('id="in-cb_items_category-', 'id="cb_items_preset_category-', $preset_categories_checklist_markup);
-*/
+    $preset_categories_checklist_markup = str_replace('name="tax_input[cb_item_category]', 'name="cb_map_options[cb_items_preset_categories]', $preset_categories_checklist_markup);
+    $preset_categories_checklist_markup = str_replace('id="in-cb_item_category-', 'id="cb_items_preset_category-', $preset_categories_checklist_markup);
 
     //TODO: cb_item_categories in CB2
-    $available_categories = [];
-    $available_categories_checklist_markup = '';
-    $preset_categories_checklist_markup = '';
+    //$available_categories = [];
+    //$available_categories_checklist_markup = '';
+    //$preset_categories_checklist_markup = '';
 
     $data_export_base_url = get_site_url(null, '', null) . '/wp-admin/admin-ajax.php';
 

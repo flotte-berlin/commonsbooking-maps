@@ -464,14 +464,14 @@
                 <input type="text" name="cb_map_options[address_search_bounds_right_top_lat]" placeholder="<?= cb_map\__('LATITUDE', 'commonsbooking-maps', 'latitude') ?>" value="<?= esc_attr( CB_Map_Admin::get_option($cb_map_id, 'address_search_bounds_right_top_lat') ); ?>" size="7">
               </td>
           </tr>
-          <tr>
+          <tr style="display: none;"> <!-- TODO: show when availability is implemented -->
               <th>
                 <?= cb_map\__('SHOW_ITEM_AVAILABILITY_FILTER', 'commonsbooking-maps', 'show item availability filter') ?>:
                 <span class="dashicons dashicons-editor-help" title="<?= cb_map\__( 'SHOW_ITEM_AVAILABILITY_FILTER_DESC', 'commonsbooking-maps', 'activate to show the item availability filter') ?>"></span>
               </th>
               <td><input type="checkbox" name="cb_map_options[show_item_availability_filter]" <?= CB_Map_Admin::get_option($cb_map_id, 'show_item_availability_filter') ? 'checked="checked"' : '' ?> value="on"></td>
           </tr>
-          <tr>
+          <tr style="display: none;"> <!-- TODO: show when availability is implemented -->
               <th>
                 <?= cb_map\__('LABEL_ITEM_AVAILABILITY_FILTER', 'commonsbooking-maps', 'label for item availability filter') ?>:
                 <span class="dashicons dashicons-editor-help" title="<?= cb_map\__( 'LABEL_ITEM_AVAILABILITY_FILTER_DESC', 'commonsbooking-maps', 'alternative label for the item availability filter') ?>"></span>
@@ -540,7 +540,7 @@
 jQuery(document).ready(function($) {
   var map_type_option_groups = {
     //local
-    1: ['usage', 'map-presentation', 'zoom', 'positioning-start', 'adaptive-map-section', 'tooltip', 'popup', 'custom-marker', 'cluster', 'filter-users', 'filter-presets', 'item-status-appearance'],
+    1: ['usage', 'map-presentation', 'zoom', 'positioning-start', 'adaptive-map-section', 'tooltip', 'popup', 'custom-marker', 'cluster'], //'filter-users', 'filter-presets', 'item-status-appearance': show when terms/categories & status are working
     //import
     2: ['usage', 'data-import', 'map-presentation', 'zoom', 'positioning-start', 'adaptive-map-section', 'tooltip', 'popup', 'custom-marker', 'cluster'],
     //export
