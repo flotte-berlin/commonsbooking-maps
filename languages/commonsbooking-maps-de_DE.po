@@ -1,0 +1,759 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cb-admin-booking\n"
+"POT-Creation-Date: 2020-10-18 14:21+0200\n"
+"PO-Revision-Date: 2020-10-18 14:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;___\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/class-cb-location-map-admin.php:60
+msgid "MAP_POSITIONING"
+msgstr "Kartenpositionierung"
+
+#: ../classes/class-cb-location-map-admin.php:68
+#: ../templates/admin-page-template.php:454
+#: ../templates/admin-page-template.php:464
+msgid "LATITUDE"
+msgstr "Breitengrad"
+
+#: ../classes/class-cb-location-map-admin.php:74
+#: ../templates/admin-page-template.php:453
+#: ../templates/admin-page-template.php:463
+msgid "LONGITUDE"
+msgstr "Längengrad"
+
+#: ../classes/class-cb-location-map-admin.php:80
+msgid "POSITION"
+msgstr "Position"
+
+#: ../classes/class-cb-map-admin.php:92
+msgid "CB_MAP_ADMIN_METABOX_TITLE"
+msgstr "Kartenkonfiguration"
+
+#: ../classes/class-cb-map-admin.php:527
+msgid "SELECT_IMAGE"
+msgstr "Bild auswählen"
+
+#: ../classes/class-cb-map-admin.php:528
+msgid "SAVE"
+msgstr "speichern"
+
+#: ../classes/class-cb-map-admin.php:529
+msgid "MARKER_IMAGE_MEASUREMENTS"
+msgstr "Bildmaße"
+
+#: ../classes/class-cb-map-settings.php:17
+msgid "SETTINGS_TITLE"
+msgstr "CommonsBooking  Maps - Einstellungen"
+
+#: ../classes/class-cb-map-settings.php:17
+msgid "SETTINGS_MENU"
+msgstr "CommonsBooking Maps"
+
+#: ../classes/class-cb-map-settings.php:90
+msgid "Settings"
+msgstr ""
+
+#: ../classes/class-cb-map-shortcode.php:81
+msgid "NO_VALID_MAP_TYPE"
+msgstr "kein gültiger Karten-Typ"
+
+#: ../classes/class-cb-map-shortcode.php:85
+msgid "NO_VALID_POST_STATUS"
+msgstr "Karte ist nicht veröffentlicht"
+
+#: ../classes/class-cb-map-shortcode.php:89
+#: ../classes/class-cb-map-shortcode.php:94
+msgid "NO_VALID_MAP_ID"
+msgstr "keine gültige Karten-ID"
+
+#: ../classes/class-cb-map-shortcode.php:216
+#: ../templates/admin-page-template.php:224
+msgid "OPENING_HOURS"
+msgstr "Öffnungszeiten"
+
+#: ../classes/class-cb-map-shortcode.php:217
+#: ../templates/admin-page-template.php:238
+msgid "CONTACT"
+msgstr "Kontakt"
+
+#: ../classes/class-cb-map-shortcode.php:218
+msgid "FROM"
+msgstr "ab"
+
+#: ../classes/class-cb-map-shortcode.php:219
+msgid "UNTIL"
+msgstr "bis"
+
+#: ../classes/class-cb-map-shortcode.php:220
+msgid "AT_LEAST"
+msgstr "mind."
+
+#: ../classes/class-cb-map-shortcode.php:221
+msgid "DAYS"
+msgstr "Tag(e)"
+
+#: ../classes/class-cb-map-shortcode.php:222
+msgid "NO_LOCATIONS_MESSAGE"
+msgstr "Leider wurden keine Standorte gefunden."
+
+#: ../classes/class-cb-map-shortcode.php:223
+msgid "FILTER"
+msgstr "filtern"
+
+#: ../classes/class-cb-map-shortcode.php:224
+#: ../templates/admin-page-template.php:479
+msgid "AVAILABILITY"
+msgstr "Verfügbarkeit"
+
+#: ../classes/class-cb-map-shortcode.php:225
+msgid "CATEGORIES"
+msgstr "Kategorien"
+
+#: ../classes/class-cb-map-shortcode.php:226
+#: ../templates/admin-page-template.php:445
+msgid "DISTANCE"
+msgstr "Entfernung"
+
+#: ../classes/class-cb-map-shortcode.php:227
+msgid "ADDRESS"
+msgstr "Adresse"
+
+#: ../classes/class-cb-map-shortcode.php:228
+msgid "GEO_SEARCH_ERROR"
+msgstr ""
+"Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten. Bitte "
+"versuche es später noch einmal."
+
+#: ../classes/class-cb-map-shortcode.php:229
+msgid "GEO_SEARCH_UNAVAILABLE"
+msgstr ""
+"Der Service ist zur Zeit überlastet. Bitte versuche es später noch einmal."
+
+#: ../classes/class-cb-map-shortcode.php:230
+msgid "COMING_SOON"
+msgstr "demnächst buchbar"
+
+#: ../classes/class-cb-map.php:10
+msgid "POST_LABELS_NAME"
+msgstr "CommonsBooking Karten"
+
+#: ../classes/class-cb-map.php:11
+msgid "POST_LABELS_SINGULAR_NAME"
+msgstr "CommonsBooking Karte"
+
+#: ../classes/class-cb-map.php:12
+msgid "POST_LABELS_ADD_NEW"
+msgstr "CB-Karte erstellen"
+
+#: ../classes/class-cb-map.php:13
+msgid "POST_LABELS_ADD_NEW_ITEM"
+msgstr "CommonsBooking - Karte erstellen"
+
+#: ../classes/class-cb-map.php:14
+msgid "POST_LABELS_EDIT_ITEM"
+msgstr "CommonsBooking-Karte bearbeiten"
+
+#: ../classes/class-cb-map.php:15
+msgid "POST_LABELS_NEW_ITEM"
+msgstr "CB-Karte erstellen"
+
+#: ../classes/class-cb-map.php:16
+msgid "POST_LABELS_VIEW_ITEM"
+msgstr "CB-Karte anzeigen"
+
+#: ../classes/class-cb-map.php:17
+msgid "POST_LABELS_SEARCH_ITEMS"
+msgstr "CB-Karten suchen"
+
+#: ../classes/class-cb-map.php:18
+msgid "POST_LABELS_NOT_FOUND"
+msgstr "keine CommonsBooking-Karte gefunden"
+
+#: ../classes/class-cb-map.php:19
+msgid "POST_LABELS_NOT_FOUND_IN_TRASH"
+msgstr "keine CommonsBooking-Karte im Papierkorb"
+
+#: ../classes/class-cb-map.php:20
+msgid "POST_LABELS_PARENT_ITEM_COLON"
+msgstr "übergeordnete CB-Karte"
+
+#: ../classes/class-cb-map.php:31
+msgid "POST_TYPE_DESCRIPTION"
+msgstr "Karten, um CommonsBooking-Standorte mit ihren Artikeln darzustellen."
+
+#: ../classes/class-cb-map.php:51
+msgid "MAPS"
+msgstr "Karten"
+
+#: ../templates/admin-page-template.php:3
+msgid "MAP_ADMIN_DESCRIPTION"
+msgstr ""
+"Die Einstellungen ermöglichen das Festlegen der Nutzungsart sowie die "
+"Anpassung der Karteninformationen und -darstellung."
+
+#: ../templates/admin-page-template.php:9
+msgid "DATA_EXPORT"
+msgstr "Daten-Export"
+
+#: ../templates/admin-page-template.php:13
+msgid "EXPORT_CODE"
+msgstr "Export-Code"
+
+#: ../templates/admin-page-template.php:14
+msgid "EXPORT_CODE_DESC"
+msgstr ""
+"generiere einen Export-Code, den du an jemanden weiterreichen kannst, der "
+"eine Webseite mit dem CommonsBooking Maps-Plugin betreibt, um die Daten zu "
+"importieren und deine Standorte mit Artikeln anzuzeigen"
+
+#: ../templates/admin-page-template.php:18
+msgid "CREATE"
+msgstr "erstellen"
+
+#: ../templates/admin-page-template.php:23
+msgid "EXPORT_BASE_URL"
+msgstr "URL"
+
+#: ../templates/admin-page-template.php:33
+msgid "DATA_IMPORT"
+msgstr "Daten-Import"
+
+#: ../templates/admin-page-template.php:37
+msgid "ADD_IMPORT_SOURCE"
+msgstr "Import-Quelle hinzufügen"
+
+#: ../templates/admin-page-template.php:38
+msgid "ADD_IMPORT_SOURCE_DESC"
+msgstr ""
+"füge eine Import-Quelle (eine andere Webseite mit installiertem "
+"CommonsBooking Maps-Plugin und vorbereitetem Karten-Export) hinzu, indem du "
+"die URL und den dazugehörigen Code eingibst, die du vom Webseiten-Admin "
+"bekommen hast"
+
+#: ../templates/admin-page-template.php:41
+msgid "ADD_IMPORT_SOURCE_BUTTON_TITLE"
+msgstr "Import-Quelle hinzufügen"
+
+#: ../templates/admin-page-template.php:46
+msgid "IMPORT_SOURCES"
+msgstr "Import-Quellen"
+
+#: ../templates/admin-page-template.php:56
+msgid "MAP_PRESENTATION"
+msgstr "Kartendarstellung"
+
+#: ../templates/admin-page-template.php:60
+msgid "MAP_SHORTCODE"
+msgstr "Shortcode"
+
+#: ../templates/admin-page-template.php:61
+msgid "MAP_SHORTCODE_DESC"
+msgstr ""
+"mit diesem Shortcode kann die Karte in Beiträge oder Seiten eingebunden "
+"werden"
+
+#: ../templates/admin-page-template.php:67
+msgid "BASE_MAP"
+msgstr "Basiskarte"
+
+#: ../templates/admin-page-template.php:68
+msgid "BASE_MAP_DESC"
+msgstr ""
+"die Basiskarte bestimmt, welchen Stil die zugrunde liegende Karte besitzt"
+
+#: ../templates/admin-page-template.php:73
+msgid "BASE_MAP_MAPNIK"
+msgstr "OSM - Mapnik"
+
+#: ../templates/admin-page-template.php:74
+msgid "BASE_MAP_GERMAN"
+msgstr "OSM - deutscher Stil"
+
+#: ../templates/admin-page-template.php:75
+msgid "BASE_MAP_HIKEANDBIKE"
+msgstr "OSM - Hike and Bike"
+
+#: ../templates/admin-page-template.php:76
+msgid "BASE_MAP_LOKALER"
+msgstr "OSM - Lokaler (min. Zoom: 9)"
+
+#: ../templates/admin-page-template.php:82
+msgid "SHOW_SCALE"
+msgstr "Maßstab anzeigen"
+
+#: ../templates/admin-page-template.php:83
+msgid "SHOW_SCALE_DESC"
+msgstr "zeigt den jeweiligen Kartenmaßstab in der linken unteren Ecke an"
+
+#: ../templates/admin-page-template.php:91
+msgid "MAP_HEIGHT"
+msgstr "Höhe"
+
+#: ../templates/admin-page-template.php:92
+msgid "MAP_HEIGHT_DESC"
+msgstr ""
+"die Höhe, mit der die Karte angezeigt wird - die Breite entspricht der des "
+"Elternelements"
+
+#: ../templates/admin-page-template.php:98
+msgid "CUSTOM_NO_LOCATIONS_MESSAGE"
+msgstr "Keine Standorte - Hinweistext"
+
+#: ../templates/admin-page-template.php:99
+msgid "CUSTOM_NO_LOCATIONS_MESSAGE_DESC"
+msgstr ""
+"wenn NutzerInnen Filter setzen und kein Ergebnis bekommen, wird ein Hinweis "
+"angezeigt - der Text kann hier angepasst werden."
+
+#: ../templates/admin-page-template.php:105
+msgid "ENABLE_MAP_DATA_EXPORT"
+msgstr "ermögliche Kartendaten-Export"
+
+#: ../templates/admin-page-template.php:106
+msgid "ENABLE_MAP_DATA_EXPORT_DESC"
+msgstr ""
+"aktivieren, um einen Button anzuzeigen, der den Export der Kartendaten "
+"erlaubt (geojson-Format)"
+
+#: ../templates/admin-page-template.php:116
+msgid "ZOOM"
+msgstr "Zoom"
+
+#: ../templates/admin-page-template.php:120
+msgid "MIN_ZOOM_LEVEL"
+msgstr "min. Zoom-Level"
+
+#: ../templates/admin-page-template.php:121
+msgid "MIN_ZOOM_LEVEL_DESC"
+msgstr "das minimale Zoom-Level, das von NuzerInnen gewählt werden kann"
+
+#: ../templates/admin-page-template.php:127
+msgid "MAX_ZOOM_LEVEL"
+msgstr "max. Zoom-Level"
+
+#: ../templates/admin-page-template.php:128
+msgid "MAX_ZOOM_LEVEL_DESC"
+msgstr "das maximale Zoom-Level, das von NuzerInnen gewählt werden kann"
+
+#: ../templates/admin-page-template.php:134
+msgid "START_ZOOM_LEVEL"
+msgstr "initiales Zoom-Level"
+
+#: ../templates/admin-page-template.php:135
+msgid "START_ZOOM_LEVEL_DESC"
+msgstr "dieses Zoom-Level wird gesetzt, wenn die Karte geladen wird"
+
+#: ../templates/admin-page-template.php:145
+msgid "POSITIONING_START"
+msgstr "initiale Kartenpositionierung (Mittelpunkt)"
+
+#: ../templates/admin-page-template.php:149
+msgid "LATITUDE_START"
+msgstr "Breitengrad"
+
+#: ../templates/admin-page-template.php:150
+msgid "LATITUDE_START_DESC"
+msgstr ""
+"der geografische Breitengrad des Kartenmittelpunkts, wenn die Karte geladen "
+"wird"
+
+#: ../templates/admin-page-template.php:157
+msgid "LONGITUDE_START"
+msgstr "Längengrad"
+
+#: ../templates/admin-page-template.php:158
+msgid "LONGITUDE_START_DESC"
+msgstr ""
+"der geografische Längengrad des Kartenmittelpunkts, wenn die Karte geladen "
+"wird"
+
+#: ../templates/admin-page-template.php:168
+msgid "ADAPTIVE_MAP_SECTION"
+msgstr "Adaptiver Kartenausschnitt"
+
+#: ../templates/admin-page-template.php:172
+msgid "ADJUST_MAP_SECTION_TO_MARKERS_INITIALLY"
+msgstr "initiale Anpassung an Marker-Umgrenzung"
+
+#: ../templates/admin-page-template.php:173
+msgid "ADJUST_MAP_SECTION_TO_MARKERS_INITIALLY_DESC"
+msgstr ""
+"automatische Anpassung des Kartenausschnitts an den von Markern abgedeckten "
+"Bereich, wenn die Karte geladen wird"
+
+#: ../templates/admin-page-template.php:181
+msgid "ADJUST_MAP_SECTION_TO_MARKERS_FILTER"
+msgstr "Anpassung an Marker-Umgrenzung nach Filterung"
+
+#: ../templates/admin-page-template.php:182
+msgid "ADJUST_MAP_SECTION_TO_MARKERS_FILTER_DESC"
+msgstr ""
+"automatische Anpassung des Kartenausschnitts an den von Markern abgedeckten "
+"Bereich, wenn diese von NutzerInnen gefiltert werden"
+
+#: ../templates/admin-page-template.php:194
+msgid "TOOLTIP"
+msgstr "Marker Tooltip"
+
+#: ../templates/admin-page-template.php:199
+msgid "MARKER_TOOLTIP_PERMANENT"
+msgstr "permanenter Tooltip"
+
+#: ../templates/admin-page-template.php:200
+msgid "MARKER_TOOLTIP_PERMANENT_DESC"
+msgstr "aktivieren, um Marker-Tooltips permanent anzuzeigen"
+
+#: ../templates/admin-page-template.php:210
+msgid "POPUP"
+msgstr "Marker Popup"
+
+#: ../templates/admin-page-template.php:214
+msgid "SHOW_LOCATION_OPENING_HOURS"
+msgstr "zeige Standort-Öffnungszeiten"
+
+#: ../templates/admin-page-template.php:215
+msgid "SHOW_LOCATION_OPENING_HOURS_DESC"
+msgstr "aktivieren, um die Standort-Öffnungszeiten im Marker-Popup anzuzeigen"
+
+#: ../templates/admin-page-template.php:221
+msgid "LABEL_LOCATION_OPENING_HOURS"
+msgstr "Beschriftung der Öffnungszeiten"
+
+#: ../templates/admin-page-template.php:222
+msgid "LABEL_LOCATION_OPENING_HOURS_DESC"
+msgstr ""
+"ein alternatives Label für die Öffnungszeiten von Standorten im Marker-Popup"
+
+#: ../templates/admin-page-template.php:228
+msgid "SHOW_LOCATION_CONTACT"
+msgstr "zeige Standort-Kontakt"
+
+#: ../templates/admin-page-template.php:229
+msgid "SHOW_LOCATION_CONTACT_DESC"
+msgstr "aktivieren, um die Standort-Kontaktdaten im Marker-Popup anzuzeigen"
+
+#: ../templates/admin-page-template.php:235
+msgid "LABEL_LOCATION_CONTACT"
+msgstr "Beschriftung der Kontaktdaten"
+
+#: ../templates/admin-page-template.php:236
+msgid "LABEL_LOCATION_CONTACT_DESC"
+msgstr ""
+"ein alternatives Label für die Kontaktdaten von Standorten im Marker-Popup"
+
+#: ../templates/admin-page-template.php:242
+msgid "SHOW_ITEM_AVAILABILITY"
+msgstr "Artikel-Verfügbarkeit anzeigen"
+
+#: ../templates/admin-page-template.php:243
+msgid "SHOW_ITEM_AVAILABILITY_DESC"
+msgstr "aktivieren, um die Artikel-Verfügbarkeit im Marker-Popup anzuzeigen"
+
+#: ../templates/admin-page-template.php:253
+msgid "CUSTOM_MARKER"
+msgstr "angepasster Marker"
+
+#: ../templates/admin-page-template.php:257
+#: ../templates/admin-page-template.php:323
+#: ../templates/admin-page-template.php:386
+msgid "IMAGE_FILE"
+msgstr "Bilddatei"
+
+#: ../templates/admin-page-template.php:258
+#: ../templates/admin-page-template.php:324
+#: ../templates/admin-page-template.php:387
+msgid "IMAGE_FILE_DESC"
+msgstr "der Standard Marker kann durch ein eigenes Bild ersetzt werden"
+
+#: ../templates/admin-page-template.php:261
+#: ../templates/admin-page-template.php:327
+#: ../templates/admin-page-template.php:390
+msgid "SELECT"
+msgstr "auswählen"
+
+#: ../templates/admin-page-template.php:262
+#: ../templates/admin-page-template.php:328
+#: ../templates/admin-page-template.php:391
+msgid "REMOVE"
+msgstr "entfernen"
+
+#: ../templates/admin-page-template.php:278
+#: ../templates/admin-page-template.php:344
+#: ../templates/admin-page-template.php:407
+msgid "ICON_SIZE"
+msgstr "Icon Größe"
+
+#: ../templates/admin-page-template.php:279
+#: ../templates/admin-page-template.php:345
+#: ../templates/admin-page-template.php:408
+msgid "ICON_SIZE_DESC"
+msgstr ""
+"die Größe des angepassten Marker-Bildes, mit der es auf der Karte angezeigt "
+"wird"
+
+#: ../templates/admin-page-template.php:289
+#: ../templates/admin-page-template.php:417
+msgid "ANCHOR_POINT"
+msgstr "Anker-Punkt"
+
+#: ../templates/admin-page-template.php:290
+#: ../templates/admin-page-template.php:418
+msgid "ANCHOR_POINT_DESC"
+msgstr ""
+"die Position des Ankerpunkts des Marker-Bildes von der linken oberen Ecke "
+"des Icons ausgehend, oftmals entspricht sie der halben Breite und der vollen "
+"Höhe der Icon-Größe - mit diesem Punkt wird der Marker auf den "
+"Geokoordinaten platziert"
+
+#: ../templates/admin-page-template.php:303
+msgid "CLUSTER"
+msgstr "Cluster"
+
+#: ../templates/admin-page-template.php:307
+msgid "MAX_CLUSTER_RADIUS"
+msgstr "max. Cluster-Radius"
+
+#: ../templates/admin-page-template.php:308
+msgid "MAX_CLUSTER_RADIUS_DESC"
+msgstr ""
+"Radius innerhalb dessen mehrere Marker zu einem Cluster zusammengefasst "
+"werden - 0 für Deaktivierung"
+
+#: ../templates/admin-page-template.php:318
+msgid "CUSTOM_CLUSTER_MARKER"
+msgstr "angepasster Cluster-Marker"
+
+#: ../templates/admin-page-template.php:359
+msgid "APPEARANCE_BY_ITEM_STATUS"
+msgstr "Verhalten abhängig vom Artikel-Status"
+
+#: ../templates/admin-page-template.php:364
+msgid "APPEARANCE"
+msgstr "Erscheinen"
+
+#: ../templates/admin-page-template.php:365
+msgid "APPEARANCE_DESC"
+msgstr ""
+"beeinflusst, wie Standorte abhängig vom Artikel-Veröffentlichungsstatus "
+"behandelt werden"
+
+#: ../templates/admin-page-template.php:370
+msgid "ITEM_DRAFT_APPEARANCE_NO"
+msgstr "zeige keine Entwürfe"
+
+#: ../templates/admin-page-template.php:371
+msgid "ITEM_DRAFT_APPEARANCE_ONLY"
+msgstr "zeige nur Entwürfe"
+
+#: ../templates/admin-page-template.php:372
+msgid "ITEM_DRAFT_APPEARANCE_ALL"
+msgstr "zeige alle zusammen"
+
+#: ../templates/admin-page-template.php:382
+msgid "CUSTOM_ITEM_DRAFT_MARKER"
+msgstr "angepasster Artikel-Entwurfs-Marker"
+
+#: ../templates/admin-page-template.php:431
+msgid "FILTER_USERS"
+msgstr "Filter für NutzerInnen"
+
+#: ../templates/admin-page-template.php:435
+msgid "SHOW_LOCATION_DISTANCE_FILTER"
+msgstr "Filter für Standort-Entfernung anzeigen"
+
+#: ../templates/admin-page-template.php:436
+msgid "SHOW_LOCATION_DISTANCE_FILTER_DESC"
+msgstr "aktivieren, um den Filter für die Standort-Entfernung anzuzeigen"
+
+#: ../templates/admin-page-template.php:442
+msgid "LABEL_LOCATION_DISTANCE_FILTER"
+msgstr "Beschriftung für Standort-Entfernungs-Filter"
+
+#: ../templates/admin-page-template.php:443
+msgid "LABEL_LOCATION_DISTANCE_FILTER_DESC"
+msgstr "ein alternatives Label für den Standort-Entfernungs-Filter"
+
+#: ../templates/admin-page-template.php:449
+msgid "ADDRESS_SEARCH_BOUNDS_LEFT_BOTTOM"
+msgstr "Begrenzung Addresssuche - links unten"
+
+#: ../templates/admin-page-template.php:450
+msgid "ADDRESS_SEARCH_BOUNDS_LEFT_BOTTOM_DESC"
+msgstr ""
+"die linke untere Ecke des Bereichs, in dem Adressen in Geokoordinaten "
+"aufgelöst werden"
+
+#: ../templates/admin-page-template.php:459
+msgid "ADDRESS_SEARCH_BOUNDS_RIGHT_TOP"
+msgstr "Begrenzung Addresssuche - rechts oben"
+
+#: ../templates/admin-page-template.php:460
+msgid "ADDRESS_SEARCH_BOUNDS_RIGHT_TOP_DESC"
+msgstr ""
+"die rechte obere Ecke des Bereichs, in dem Adressen in Geokoordinaten "
+"aufgelöst werden"
+
+#: ../templates/admin-page-template.php:469
+msgid "SHOW_ITEM_AVAILABILITY_FILTER"
+msgstr "Filter für Artikel-Verfügbarkeit anzeigen"
+
+#: ../templates/admin-page-template.php:470
+msgid "SHOW_ITEM_AVAILABILITY_FILTER_DESC"
+msgstr "aktivieren, um den Filter für die Artikel-Verfügbarkeit anzuzeigen"
+
+#: ../templates/admin-page-template.php:476
+msgid "LABEL_ITEM_AVAILABILITY_FILTER"
+msgstr "Beschriftung für Artikel-Verfügbarkeit"
+
+#: ../templates/admin-page-template.php:477
+msgid "LABEL_ITEM_AVAILABILITY_FILTER_DESC"
+msgstr "ein alternatives Label für den Artikel-Verfügbarkeits-Filter"
+
+#: ../templates/admin-page-template.php:483
+msgid "LABEL_ITEM_CATEGORY_FILTER"
+msgstr "Beschriftung für Artikel-Kategorie-Filter"
+
+#: ../templates/admin-page-template.php:484
+msgid "LABEL_ITEM_CATEGORY_FILTER_DESC"
+msgstr "ein alternatives Label für Artikel-Kategorie-Filter"
+
+#: ../templates/admin-page-template.php:486
+msgid "ITEM_CATEGORIES"
+msgstr "Kategorien"
+
+#: ../templates/admin-page-template.php:491
+msgid "AVAILABLE_CATEGORIES"
+msgstr "verfügbare Kategorien"
+
+#: ../templates/admin-page-template.php:492
+msgid "AVAILABLE_CATEGORIES_DESC"
+msgstr ""
+"Kategorien, die NutzerInnen angezeigt werden , um Artikel zu filtern "
+"(erscheinen in der Gruppierung und Reihenfolge der Label-Liste unten) - "
+"keine Auswahl für Deaktivierung von Kategorie-Filtern"
+
+#: ../templates/admin-page-template.php:506
+msgid "CUSTOM_CATEGORY_FILTER_LABEL_MARKUP"
+msgstr "Gruppierung der Filter-Label und individuelles HTML"
+
+#: ../templates/admin-page-template.php:508
+msgid "ADD_FILTER_GROUP_BUTTON_TITLE"
+msgstr "Filter-Gruppe hinzufügen"
+
+#: ../templates/admin-page-template.php:517
+msgid "FILTER_PRESETS"
+msgstr "Vorabfilter"
+
+#: ../templates/admin-page-template.php:521
+msgid "PRESET_CATEGORIES"
+msgstr "gesetzte Kategorien"
+
+#: ../templates/admin-page-template.php:522
+msgid "PRESET_CATEGORIES_DESC"
+msgstr ""
+"Auswahl der Kategorien, die genutzt werden, um Artikel vorzufiltern, die auf "
+"der Karte angezeigt werden (Kategorien auf einer Ebene sind ODER-verknüpft, "
+"d.h. nur eine muss erfüllt sein) - keine Auswahl zeigt alle Artikel an"
+
+#: ../templates/admin-page-template.php:623
+msgid "FILTER_GROUP"
+msgstr "Filter-Gruppe"
+
+#: ../templates/admin-page-template.php:623
+msgid "FILTER_GROUP_PLACEHOLDER"
+msgstr "Gruppenname"
+
+#: ../templates/admin-page-template.php:626
+msgid "REMOVE_FILTER_GROUP_BUTTON_TITLE"
+msgstr "Filter-Gruppe entfernen"
+
+#: ../templates/admin-page-template.php:705
+msgid "URL"
+msgstr "URL"
+
+#: ../templates/admin-page-template.php:706
+msgid "CODE"
+msgstr "Code"
+
+#: ../templates/admin-page-template.php:720
+msgid "REMOVE_IMPORT_SOURCE_BUTTON_TITLE"
+msgstr "Import-Quelle entfernen"
+
+#: ../templates/admin-page-template.php:728
+msgid "TEST_IMPORT_SOURCE_BUTTON_TITLE"
+msgstr "Import-Quelle testen"
+
+#: ../templates/settings-page-template.php:3
+msgid "SETTINGS_PAGE_HEADER"
+msgstr "Einstellungen für  CommonsBooking Maps"
+
+#: ../templates/settings-page-template.php:5
+msgid "SETTINGS_DESCRIPTION"
+msgstr ""
+"allgemeine Einstellungen zum Verhalten des CommonsBooking Maps - Plugins"
+
+#~ msgid "USAGE"
+#~ msgstr "Nutzung"
+
+#~ msgid "MAP_TYPE"
+#~ msgstr "Kartentyp"
+
+#~ msgid "MAP_TYPE_DESC"
+#~ msgstr ""
+#~ "der Kartentyp definiert die Nutzungsart - ob die Karte auf der eigenen "
+#~ "Webseite mit den vorhandenen Standorten und Artikeln (lokal) angezeigt "
+#~ "werden soll, Daten von externen Quellen, also anderen Wordpress-"
+#~ "Installationen mit dem CB-Map Plugin (Import) darstellen oder Daten für "
+#~ "andere Webseiten bereitstellen soll (Export)"
+
+#~ msgid "MAP_TYPE_LOCAL"
+#~ msgstr "lokal"
+
+#~ msgid "MAP_TYPE_IMPORT"
+#~ msgstr "Import"
+
+#~ msgid "MAP_TYPE_EXPORT"
+#~ msgstr "Export"
+
+#~ msgid "BOOKING_PAGE_LINK_REPLACEMENT"
+#~ msgstr "Karten-Link auf Buchungsseite ersetzen"
+
+#~ msgid "BOOKING_PAGE_LINK_REPLACEMENT_DESC"
+#~ msgstr ""
+#~ "mit der Aktivierung wird das Ziel des Links 'Auf der Karte zeigen' auf "
+#~ "der Buchungsseite durch openstreetmap ersetzt"
+
+#~ msgid "ITEM_STATUS"
+#~ msgstr "Verhalten abhängig vom Artikel-Status"
+
+#~ msgid "SHOW_SHOW_ITEM_AVAILABILITY_DESC"
+#~ msgstr "aktivieren, um die Artikel-Verfügbarkeit im Marker-Popup anzuzeigen"
+
+#~ msgid "LOKALER"
+#~ msgstr "OSM - Lokaler"
+
+#~ msgid "ADD_FILTER_GROUP"
+#~ msgstr "Filter-Gruppe hinzufügen"
+
+#~ msgid "FILTER_CONFIGURATION"
+#~ msgstr "Filter-Einstellungen"
+
+#~ msgid "LABEL_OPENING_HOURS"
+#~ msgstr "Beschriftung der Öffnungszeiten"
+
+#~ msgid "LABEL_OPENING_HOURS_DESC"
+#~ msgstr ""
+#~ "ein alternatives Label für die Öffnungszeiten von Standorten im Marker-"
+#~ "Popup"
+
+#~ msgid "UPLOAD_IMAGE"
+#~ msgstr "hochladen"
