@@ -58,19 +58,19 @@ class CB_Location_Map_Admin {
     $meta_boxes['cb_locations_map'] = array(
       'id'            => 'cb_locations_map',
       'title'         => cb_map\__( 'MAP_POSITIONING', 'commonsbooking-maps', 'Map Positioning' ),
-      'object_types'  => array( 'cb_locations' ), // Post type
+      'object_types'  => array( 'cb_location' ), // Post type
       'context'       => 'normal',
-      'priority'      => 'low',
+      'priority'      => 'high',
       'show_names'    => true, // Show field names on the left
       'fields'        => array(
         array(
-          'id'        => 'cb-map' . '_latitude',
+          'id'        => 'geo_latitude', // https://codex.wordpress.org/Geodata
           'name'      => cb_map\__( 'LATITUDE', 'commonsbooking-maps', 'Latitude' ),
           'type'      => 'text_small',
         	'default'   => ''
         ),
         array(
-          'id'        => 'cb-map' . '_longitude',
+          'id'        => 'geo_longitude', // https://codex.wordpress.org/Geodata
           'name'      => cb_map\__( 'LONGITUDE', 'commonsbooking-maps', 'Longitude' ),
           'type'      => 'text_small',
         	'default'   => ''

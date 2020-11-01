@@ -31,8 +31,8 @@ var cb_map_positioning = {
     }).addTo(map);
 
     this.marker.on('dragend', function (e) {
-        jQuery('#cb-map_latitude').val(that.marker.getLatLng().lat);
-        jQuery('#cb-map_longitude').val(that.marker.getLatLng().lng);
+        jQuery('#geo_latitude').val(that.marker.getLatLng().lat);
+        jQuery('#geo_longitude').val(that.marker.getLatLng().lng);
     });
 
   },
@@ -54,9 +54,9 @@ var cb_map_positioning = {
 
     var url = 'https://nominatim.openstreetmap.org/search';
     var params = {
-      street: jQuery('#commons-booking_location_adress_street').val(),
-      city: jQuery('#commons-booking_location_adress_city').val(),
-      postalcode: jQuery('#commons-booking_location_adress_zip').val(),
+      street: jQuery('#_cb_location_street').val(),
+      city: jQuery('#_cb_location_city').val(),
+      postalcode: jQuery('#_cb_location_postcode').val(),
       format: 'json',
       limit: 1
     }
@@ -66,8 +66,8 @@ var cb_map_positioning = {
       if(data.length > 0) {
         cb_map_positioning.init_map(data[0].lat, data[0].lon, true);
 
-        jQuery('#cb-map_latitude').val(data[0].lat);
-        jQuery('#cb-map_longitude').val(data[0].lon);
+        jQuery('#geo_latitude').val(data[0].lat);
+        jQuery('#geo_longitude').val(data[0].lon);
 
       }
       else {
@@ -84,8 +84,8 @@ var cb_map_positioning = {
 
 jQuery(document).ready(function ($) {
 
-  var $latitude = jQuery('#cb-map_latitude');
-  var $longitude = jQuery('#cb-map_longitude');
+  var $latitude = jQuery('#geo_latitude');
+  var $longitude = jQuery('#geo_longitude');
 
   //set initial marker: check if lat/lon is given, otherwise search nominatim
   if(!cb_map_positioning.is_lat_lon($latitude.val(), $longitude.val())) {
