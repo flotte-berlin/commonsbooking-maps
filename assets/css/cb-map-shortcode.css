@@ -79,24 +79,26 @@
   text-align: center;
   border: 1px solid #fff;
 
-  border-radius: 7px;
+  /*border-radius: 7px;*/
   background-clip: padding-box;
 }
 
 .cb-map-popup-item-availability-day.available {
-  background-color: rgb(127, 198, 0);
+  background-color: var(--litepickerDayColorBg); /*rgb(32, 197, 39);*/
+  color: var(--litepickerDayColor); /*#333;*/
 }
 .cb-map-popup-item-availability-day.location-closed {
-  background-color: #ddd;
-  color: #222;
+  background-color: var(--litepickerDayIsHolidayColorBg);
+  color: var(--litepickerDayIsHolidayColor);
 }
 .cb-map-popup-item-availability-day.no-timeframe {
-  background-color: #ddd;
-  color: #fff;
+  background-color: var(--litepickerDayIsLockedColorBg);
+  color: var(--litepickerDayIsLockedColor);
 }
 .cb-map-popup-item-availability-day.booked {
-  color: #444;
-  background: linear-gradient(to top left, rgb(238, 116, 0) 0%, rgb(238, 116, 0) calc(50% - 1px), #333 50%, rgb(238, 116, 0) calc(50% + 1px), rgb(238, 116, 0) 100%);
+  /*background: linear-gradient(to top left, rgb(240, 111, 111) 0%, rgb(240, 111, 111) calc(50% - 1px), #333 50%, rgb(240, 111, 111) calc(50% + 1px), rgb(240, 111, 111) 100%);*/
+  background-color: var(--litepickerDayIsBookedColorBg); /*rgb(240, 111, 111);*/
+  color: var(--litepickerDayIsBookedColor); /*#333;*/
 }
 
 .cb-map-popup-item-desc {

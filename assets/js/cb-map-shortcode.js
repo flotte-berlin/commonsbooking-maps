@@ -395,24 +395,30 @@ function CB_Map() {
       //set status
       let av_date_start = new Date(av.start.slice(0, 10));
       let av_date_start_string = cb_map.date_to_string(av_date_start);
-      console.log('av_date_start_string: ', av.start, av_date_start_string);
+      //console.log('av_date_start_string: ', av.start, av_date_start_string);
       if(locations[av.locationId].items[av.itemId].availability[av_date_start_string])
       locations[av.locationId].items[av.itemId].availability[av_date_start_string].status = 0;
     });
 
     locations = Object.values(locations);
 
+    let locations_with_items = [];
+
     //convert location.items to array
     locations.forEach((location, i) => {
       location.items = Object.values(location.items);
 
-      //convert item.availability to array
-      location.items.forEach((item, i) => {
-        item.availability = Object.values(item.availability);
-      })
+      if(location.items.length > 0) {
+        locations_with_items.push(location);
+
+        //convert item.availability to array
+        location.items.forEach((item, i) => {
+          item.availability = Object.values(item.availability);
+        })
+      }
     });
 
-    return locations;
+    return locations_with_items;
   }
 
   cb_map.date_to_string = function(date) {
