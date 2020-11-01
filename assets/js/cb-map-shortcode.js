@@ -103,9 +103,9 @@ function CB_Map() {
         3: 'no-timeframe'
     }
 
+    console.log('availability: ', availability);
     availability.forEach(function(day) {
-      var timestamp = Date.parse(day.date);
-      var date = new Date(timestamp);
+      var date = day.date;
       var show_date = date.getDate();
       show_date = show_date <= 9 ? '0' + show_date : show_date;
       var show_month = date.getMonth() + 1;
@@ -367,20 +367,69 @@ function CB_Map() {
 
     });
 
-    input_availability.forEach((av, i) => {
-      if(!locations[av.locationId].items[av.itemId]) {
-        locations[av.locationId].items[av.itemId] = items[av.itemId];
+    //availability
+    Object.keys(items).forEach((item_id, i) => {
+      let item_availability = {};
+      let next_days_count = 7;
+      let current_date = new Date();
+      for(d = 0; d < next_days_count; d++) {
+        let date = cb_map.add_days_to_date(current_date, d);
+        let date_string = cb_map.date_to_string(date);
+        item_availability[date_string] = {
+          date: date,
+          status: 2
+        };
       }
+
+      items[item_id].availability = item_availability;
+    });
+
+
+    input_availability.forEach((av, i) => {
+
+      //attach item to location, if not done yet
+      if(!locations[av.locationId].items[av.itemId]) {
+        locations[av.locationId].items[av.itemId] = Object.assign({}, items[av.itemId]); //clone
+      }
+
+      //set status
+      let av_date_start = new Date(av.start.slice(0, 10));
+      let av_date_start_string = cb_map.date_to_string(av_date_start);
+      //console.log('av_date_start_string: ', av.start, av_date_start_string);
+      if(locations[av.locationId].items[av.itemId].availability[av_date_start_string])
+      locations[av.locationId].items[av.itemId].availability[av_date_start_string].status = 0;
     });
 
     locations = Object.values(locations);
 
+    let locations_with_items = [];
+
+    //convert location.items to array
     locations.forEach((location, i) => {
       location.items = Object.values(location.items);
+
+      if(location.items.length > 0) {
+        locations_with_items.push(location);
+
+        //convert item.availability to array
+        location.items.forEach((item, i) => {
+          item.availability = Object.values(item.availability);
+        })
+      }
     });
 
-    return locations;
+    return locations_with_items;
   }
+
+  cb_map.date_to_string = function(date) {
+    return date.toISOString().slice(0, 10)
+  }
+
+  cb_map.add_days_to_date = function(start_date, days) {
+    var date = new Date(start_date.valueOf());
+    date.setDate(date.getDate() + days);
+    return date;
+}
 
   return cb_map;
 }
