@@ -351,7 +351,7 @@ function CB_Map() {
       };
     });
 
-    input_locations.forEach((input_location) => {
+    input_locations.features.forEach((input_location) => {
       if(input_location.geometry) {
         var location = {
           id: input_location.properties.id,
